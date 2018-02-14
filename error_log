@@ -1,0 +1,6 @@
+[31-Oct-2017 11:21:21 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'havas'@'localhost' (using password: YES) in /home/havasicpna/public_html/prueba/process.php on line 5
+[31-Oct-2017 11:21:21 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/havasicpna/public_html/prueba/process.php on line 6
+[31-Oct-2017 11:21:21 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/havasicpna/public_html/prueba/process.php on line 29
+[31-Oct-2017 11:21:21 UTC] PHP Notice:  Trying to get property of non-object in /home/havasicpna/public_html/prueba/process.php on line 30
+[31-Oct-2017 11:21:21 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/havasicpna/public_html/prueba/process.php on line 36
+[31-Oct-2017 11:21:21 UTC] PHP Warning:  main(): Couldn't fetch mysqli in /home/havasicpna/public_html/prueba/process.php on line 39

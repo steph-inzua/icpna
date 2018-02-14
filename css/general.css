@@ -1,0 +1,565 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+body {
+  color: #000;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto; 
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+
+a img {
+  border: none;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans-Light.eot");
+  src: url("../fonts/BentonSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Light.woff") format("woff"), url("../fonts/BentonSans-Light.ttf") format("truetype"), url("../fonts/BentonSans-Light.svg#BentonSans") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+label.form_legal.error {
+    border: solid 1px red;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-Light.svg#family')) format("svg");
+  }
+}
+
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans-Regular.eot");
+  src: url("../fonts/BentonSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Regular.woff") format("woff"), url("../fonts/BentonSans-Regular.ttf") format("truetype"), url("../fonts/BentonSans-Regular.svg#BentonSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-Regular.svg#family')) format("svg");
+  }
+}
+
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans-Medium.eot");
+  src: url("../fonts/BentonSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Medium.woff") format("woff"), url("../fonts/BentonSans-Medium.ttf") format("truetype"), url("../fonts/BentonSans-Medium.svg#BentonSans") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-Medium.svg#family')) format("svg");
+  }
+}
+
+@font-face {
+  font-family: "BentonSans";
+  font-style: italic;
+  src: url("../fonts/BentonSans-MediumItalic.eot");
+  src: url("../fonts/BentonSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-MediumItalic.woff") format("woff"), url("../fonts/BentonSans-MediumItalic.ttf") format("truetype"), url("../fonts/BentonSans-MediumItalic.svg#BentonSans") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-MediumItalic.svg#family')) format("svg");
+  }
+}
+
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans-Bold.eot");
+  src: url("../fonts/BentonSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Bold.woff") format("woff"), url("../fonts/BentonSans-Bold.ttf") format("truetype"), url("../fonts/BentonSans-Bold.svg#BentonSans") format("svg");
+  font-weight: 600;
+  
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-Bold.svg#family')) format("svg");
+  }
+}
+
+
+@font-face {
+  font-family: "BentonSans";
+  src: url("../fonts/BentonSans-Black.eot");
+  src: url("../fonts/BentonSans-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Black.woff") format("woff"), url("../fonts/BentonSans-Black.ttf") format("truetype"), url("../fonts/BentonSans-Black.svg#BentonSans") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "BentonSans";
+    src: url(font-url('BentonSans-Black.svg#family')) format("svg");
+  }
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Roboto";
+    src: url(font-url('Roboto-Regular.svg#family')) format("svg");
+  }
+}
+
+/*
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #888888; 
+}
+
+}
+*/
+*::-webkit-input-placeholder {
+    color: #cdcdcd;
+}
+*:-moz-placeholder {
+    color: #cdcdcd;
+}
+*::-moz-placeholder {
+    color: #cdcdcd;
+}
+*:-ms-input-placeholder {
+    color: #cdcdcd;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BentonSans";
+  color: #808080;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  overflow-x: hidden;
+  transition: all .2s;
+
+}
+
+body p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+  body p {
+    font-size: 0.8125rem;
+  }
+}
+
+body a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cl {
+  clear: both;
+  height: 1px;
+}
+
+
+.contenedor {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .contenedor {
+   padding: 0 10px;
+
+  }
+}
+
+h2,
+h3,
+h4 {
+  
+}
+
+
+
+h2{
+  font-weight: 300;
+  color: #fff; 
+  font-size: 55px;
+  letter-spacing: -0.5px;
+  line-height: 1.1em;
+}
+
+
+
+.section {
+  padding: 45px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* buttons */
+.btn{ text-transform: uppercase; text-decoration: none; display: inline-block;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+.btn.btn1{ background: #fd2415; color: #fff; font-weight: 600; padding: 13px 20px;  border-radius: 10px; font-size: 20px; border: 3px solid #CCCCCC; transition: all .4s }
+.btn1:hover{background: #d50202; }
+@media only screen and (max-width: 768px) {
+.btn.btn1{  font-weight: 400; letter-spacing: 0.4px; padding: 8px 15px;  border-radius: 8px; font-size: 15px; border: 2px solid #CCCCCC; }
+ }
+ @media only screen and (max-width: 568px) {
+  .btn.btn1{ font-size: 13px;}
+
+ }
+.bold{ font-weight: 600 ; }
+@media only screen and (max-width: 768px) {
+ .bold{   text-align: center; display: block;}
+}
+
+
+header{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 5px 0;
+  box-shadow: -2px 0  12px #bbbbbb;
+  -webkit-box-shadow: -2px 0  12px #bbbbbb;
+  -moz-box-shadow: -2px 0  12px #bbbbbb;
+}
+header .contenedor{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align:center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+header .logo{  }
+header .logo img{ display: block; }
+@media only screen and (max-width: 768px) {
+  header{ background: #f9f9f9;   padding: 8px 0;}
+  header .logo{ max-width: 100px; margin-left: 45px; }
+}
+#navigation ul{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+#navigation ul a{ color: #002fa4; text-decoration:  none; margin: 0 40px; font-weight: 500; transition: all .4s}
+#navigation ul li{ border-right: 1px solid #002fa4 }
+#navigation ul li:nth-last-child(1) { border-right: 0; }
+#navigation ul a:hover, #navigation ul a.act{ color: #fd2415; }
+#navigation .nav-resp{ display: none; }
+
+.nav-open{
+  height: 40px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+  width: 45px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  padding: 0 27px;
+}
+.nav-open:focus{ outline: none; }
+.nav-open .inner, .nav-open .inner::before, .nav-open .inner::after {
+    background-color: #cfcfcf;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 23px;
+    border-radius: 1px;
+    transition: all .5s ease;
+  }
+
+  
+.nav-open .inner {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+    
+.nav-open .inner::before {
+    margin-top: -7px;
+    position: absolute;
+    }
+    
+.nav-open .inner::after {
+    margin-top: 7px;
+    position: absolute;
+}
+
+.nav-open.nav-close .inner {
+    background-color: transparent;
+    
+}
+.nav-open.nav-close .inner::before, .nav-open.nav-close .inner::after {
+      transform: rotate(45deg);
+      transform-origin: 0 40%;
+      width: 26px;
+      
+
+    }
+    
+.nav-open.nav-close .inner::after {
+      transform: rotate(-45deg);
+ }
+
+.nav-open.nav-close .inner::before{margin-top: -9px;}
+.nav-open.nav-close .inner::after{margin-top: 9px;}
+
+@media only screen and (max-width: 768px) {
+  .nav-open{ display: block; }
+  #navigation{ position: absolute; top: 35px; width: 100%; left: 0; background: #fff; box-shadow: 0 2px 0 #e1e1e1; max-height: 0; overflow: hidden;  transition: cubic-bezier(.17,.67,.54,.54) .4s;}
+  #navigation.nav-list-open{ max-height: 600px; height: auto;  transition: cubic-bezier(.17,.67,.54,.74) 3s;}
+  #navigation ul{ display: block; padding: 0;}
+  #navigation ul li{ border-right: 0}
+  #navigation ul li a{ display: block; color: #8b8b8b; font-size: 13px; font-weight: 400; border-bottom: #efefef 1px solid; margin: 0; padding: 16px 50px; }
+   #navigation ul li:first-child a{  border-top: #efefef 1px solid;}
+  #navigation ul li:nth-last-child(1)  a{ border-bottom: 0; }
+  #navigation .nav-resp{ display: block !important; }
+}
+
+
+
+/* programas */
+.calendario-list{
+  background: url('../images/ico-calendario.jpg') no-repeat right center;
+  padding-right: 230px;
+  margin-bottom: 10px;
+}
+.calendario-list .pos-titulo{    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 20px;  }
+
+@media only screen and (max-width: 585px) {
+  .calendario-list{
+      padding-right: 0;
+      /*background: url('../images/ico-calendario.jpg') no-repeat center bottom;
+      background-size: 70px auto;
+      padding-bottom: 75px;*/
+      background: none;
+  }
+  .calendario-list .pos-titulo{ font-weight: 500;  font-size: 14px; margin-bottom: 5px;  }
+}
+.item-plan{
+  margin-bottom: 10px;
+}
+.item-plan p > span{ font-weight: 500; display: block; margin-top: 15px; }
+.select-horarios{ max-width: 700px; }
+
+
+
+.contenido{ width: 100%; /*transition: all .4s;*/ }
+
+.sticky{
+  position: relative;
+  
+  height: 100%
+}
+
+@media only screen and (max-width: 668px) {
+  .sticky{
+  display: block;
+ }
+}
+
+.pagina {
+  position: relative;
+  z-index: 1;
+}
+
+/* programas */
+ul.horario{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.op1, .op2, .op3 { width: 33.33333%; padding: 0 8px; box-sizing: border-box; }
